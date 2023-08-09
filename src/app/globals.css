@@ -70,3 +70,10 @@ section {
 .img.active {
   width: 70%;
 }
+
+.dot {
+  width: 30px;
+  height: 30px;
+  background-color: coral;
+  border-radius: 20px;
+}
