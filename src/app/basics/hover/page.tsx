@@ -23,7 +23,11 @@ export default function Hover() {
         )
         .to(
           item.querySelector(".dot"),
-          { backgroundColor: "green", scale: 1.5 },
+          {
+            backgroundColor: "green",
+            scale: 1.5,
+            transformOrigin: "left center",
+          },
           0
         );
 
