@@ -48,7 +48,7 @@ export default function Tween() {
   };
 
   return (
-    <div style={bground} id="freds" className="flex h-screen ">
+    <div style={bground} id="freds" className="flex h-screen overflow-hidden">
       <img
         className="w-32 h-32 monster1 opacity-0"
         src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fclipart-library.com%2Fimages%2F6Tpo6nM6c.png&f=1&nofb=1&ipt=263746bba242785e0456e6707aed2ee70654d2fe9decfac3a72aac71bfc014d5&ipo=images"
