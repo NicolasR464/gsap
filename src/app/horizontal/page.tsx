@@ -117,7 +117,12 @@ export default function Horizontal() {
       <section>
         <div className="box flex justify-center items-center box3 horizontal horizontal3">
           <img
-            className="img"
+            className="m-10 w-80"
+            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F3.bp.blogspot.com%2F-JzB2ruOjBOs%2FWJy8tR_tJSI%2FAAAAAAAABdA%2F26gANOQ4Y4IZyMnEGS2L8X-dvhVhGL0ZQCLcB%2Fs1600%2Fjupiter_HD.jpg&f=1&nofb=1&ipt=6072c3e6b1ab199abdb6af87f6a8eecb620075d816cd4c43f6d8c690e1471722&ipo=images"
+            alt="planet"
+          />
+          <img
+            className="m-10 w-80"
             src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F3.bp.blogspot.com%2F-JzB2ruOjBOs%2FWJy8tR_tJSI%2FAAAAAAAABdA%2F26gANOQ4Y4IZyMnEGS2L8X-dvhVhGL0ZQCLcB%2Fs1600%2Fjupiter_HD.jpg&f=1&nofb=1&ipt=6072c3e6b1ab199abdb6af87f6a8eecb620075d816cd4c43f6d8c690e1471722&ipo=images"
             alt="planet"
           />

@@ -68,7 +68,7 @@ export default function Keyframes() {
         </button>
       </div>
       <div className="relative  mb-20">
-        <div className="relative w-60 h-60 overflow-hidden">
+        <div className="relative w-60  h-60 overflow-hidden">
           <img
             src="/images/monster.png"
             alt="image"
