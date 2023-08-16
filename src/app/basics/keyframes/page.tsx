@@ -37,7 +37,6 @@ export default function Keyframes() {
             "100%": {
               rotation: 0,
               skewY: 0,
-
               y: -40,
               skewX: -2,
             },

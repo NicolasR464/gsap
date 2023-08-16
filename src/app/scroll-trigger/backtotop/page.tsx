@@ -4,6 +4,9 @@ import styles from "./page.module.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+// with Herman animation : https://codepen.io/snorkltv/pen/mdwNWbj
+// resetting the animation with fastScrollEnd
+
 export default function Home() {
   gsap.registerPlugin(ScrollTrigger);
   const [isBottom, setIsBottom] = useState(false);
@@ -12,12 +15,9 @@ export default function Home() {
     ScrollTrigger.create({
       trigger: ".body",
       start: "75% bottom",
-      toggleClass: "active",
       onEnter: () => console.log("enter"),
-      //   onLeave: () => console.log("leave"),
       onToggle: (self) => setIsBottom(true),
       onLeaveBack: () => setIsBottom(false),
-      onLeave: () => console.log("out"),
     });
   }, []);
 
