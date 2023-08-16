@@ -1,0 +1,44 @@
+.fullscreen {
+  height: 100vh;
+  background: grey;
+  display: flex;
+  align-items: center;
+  padding-left: 10vw;
+  font-size: 8vw;
+  font-family: Kanit, sans-serif;
+}
+
+.dark {
+  background: #333;
+  color: #ccc;
+}
+
+.light {
+  background: #ccc;
+}
+
+.pink {
+  background: #fcf;
+}
+
+.message {
+  z-index: 2;
+  background: black;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: fit-content;
+  font-weight: bold;
+  font-family: sans-serif;
+  border-radius: 8px 8px 0 0;
+}
+
+.active .message {
+  background-color: blue;
+}
+
+.a {
+  color: #f60;
+}

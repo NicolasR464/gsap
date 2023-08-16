@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useRef } from "react";
+import React, { useLayoutEffect, useRef, ReactNode } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
 import styles from "./style.module.css";
@@ -21,7 +21,11 @@ export default function Index() {
   );
 }
 
-function AnimatedText({ children }) {
+interface AnimatedTextProps {
+  children: ReactNode; // Specify the type of children prop
+}
+
+function AnimatedText({ children }: AnimatedTextProps) {
   const text = useRef(null);
 
   useLayoutEffect(() => {
