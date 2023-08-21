@@ -13,53 +13,6 @@ export default function Horizontal() {
   const containerRef = useRef<HTMLElement | null>(null);
   const [containerWidth, setContainerWidth] = useState(0);
 
-  //   useEffect(() => {
-  //     ScrollTrigger.defaults({
-  //       toggleActions: "restart pause resume none",
-  //       markers: true,
-  //       //   markers: false,
-  //     });
-  //   }, []);
-
-  //   useEffect(() => {
-  //     ScrollTrigger.create({
-  //       id: "img",
-  //       markers: true,
-  //       trigger: ".img",
-  //       //   scroller: ".img",
-  //       start: "center center",
-  //       end: "top top",
-  //       scrub: 1,
-  //       onEnter: () => console.log("enter"),
-  //       onLeave: () => console.log("leave"),
-  //       onEnterBack: () => console.log("enter back"),
-  //       onLeaveBack: () => console.log("all the way back"),
-  //       onUpdate: (self) => console.log("update: ", self.progress.toFixed(2)),
-  //       onToggle: (self) => console.log("toggled", self.isActive),
-  //       toggleClass: "active",
-  //     });
-
-  //     let imgTrigger = ScrollTrigger.getById("img");
-  //   }, []);
-
-  //   useEffect(() => {
-  //     gsap.to(".img", {
-  //       scrollTrigger: {
-  //         id: "img",
-  //         trigger: ".img",
-  //         toggleActions: "restart pause resume none",
-  //         start: "center 40%",
-  //         // end: "bottom 100px",
-  //         // end: "+=" + box3.current,
-  //         end: "+=200",
-  //         markers: true,
-  //       },
-  //       scale: 1.6,
-  //       duration: 3,
-  //       scrub: 1,
-  //     });
-  //   }, []);
-
   useEffect(() => {
     let sections = gsap.utils.toArray(".horizontal");
     console.log(containerRef.current);
@@ -71,8 +24,6 @@ export default function Horizontal() {
         trigger: ".container",
         pin: true,
         scrub: 1.5,
-        markers: true,
-        start: "top top",
 
         // snap: 1 / (sections.length - 1),
         toggleActions: "restart pause resume none",
@@ -107,26 +58,6 @@ export default function Horizontal() {
         },
       });
     });
-
-    // only show the relevant section's markers at any given time
-    // gsap.set(
-    //   ".gsap-marker-start, .gsap-marker-end, .gsap-marker-scroller-start, .gsap-marker-scroller-end",
-    //   { autoAlpha: 0 }
-    // );
-    // sections.forEach((triggerClass, i) => {
-    //   ScrollTrigger.create({
-    //     trigger: "." + triggerClass,
-    //     containerAnimation: container,
-    //     start: "left 30%",
-    //     end: i === 3 ? "right right" : "right 30%",
-    //     markers: false,
-    //     onToggle: (self) =>
-    //       gsap.to(".marker-" + (i + 1), {
-    //         duration: 0.25,
-    //         autoAlpha: self.isActive ? 1 : 0,
-    //       }),
-    //   });
-    // });
   }, [containerRef.current?.offsetWidth]);
 
   return (
